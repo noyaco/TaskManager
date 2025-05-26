@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background-image: url('https://images.pexels.com/photos/1037994/pexels-photo-1037994.jpeg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  direction: rtl;
+  text-align: right;
+  gap: 10px;
+
+}
+
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px; 
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 80%;
+  max-width: 850px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 42px;
+  color: #FF4081; 
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+.task-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  direction: rtl;
+}
+
+
+.task-input, .date-input {
+  background-color: #f9f9f9;
+  border: 2px solid #D1B2FF;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 25px;
+  width: 200px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+
+.add-button {
+  background-color: #8A2BE2;
+  color: white;
+  border: none;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #E6E6FA;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  text-align: right;
+  font-family: 'Comic Sans MS', cursive, sans-serif; 
+  transition: all 0.3s ease;
+  
+}
+
+
+.delete-button {
+   background-color: #8A2BE2;
+  color: white;
+  border: none;
+  padding: 6px 12px;         
+  font-size: 14px;          
+  border-radius: 15px;
+  cursor: pointer;
+  direction: rtl;
+  transition: all 0.3s ease;
+  margin-right: 12px; 
+  }      
+
+.delete-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  direction: rtl;
+}
+
+
+.task-item:hover {
+  background-color: #F2E1FF;
+}
+
+.task-input:focus, .date-input:focus, .add-button:hover, .delete-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+  display: inline-block;
+    
+}
+
+.task-text {
+  font-size: 18px;
+  font-family: 'Segoe UI', 'Assistant', sans-serif;
+  color: #333;
+  margin: 0 12px;
+  line-height: 1.6;
+  margin-left: 10px;
+
+}
