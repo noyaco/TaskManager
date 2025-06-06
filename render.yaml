@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: taskmanager-server
+    env: docker
+    plan: free
+    buildCommand: "./mvnw clean install"
+    startCommand: "java -jar server/target/*.jar"
+    rootDir: server
